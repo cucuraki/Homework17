@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
+    android:background="@drawable/cornered_background"
     >
     <ImageView
         android:id="@+id/img"
@@ -25,7 +25,31 @@
         app:layout_constraintTop_toTopOf="@+id/img"
         app:layout_constraintBottom_toBottomOf="@+id/img"
         android:layout_marginStart="20dp"
+        />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/btn"
+        app:layout_constraintTop_toBottomOf="@+id/img"
+        android:layout_marginTop="40dp"
+        android:text="@string/business"
+        android:paddingHorizontal="25dp"
+        android:layout_marginStart="-20dp"
+        android:background="@drawable/cornered_background"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/img"
+        app:layout_constraintTop_toBottomOf="@+id/img"
+        android:layout_marginTop="40dp"
+        android:text="@string/personal"
+        android:background="@drawable/cornered_background"
+        android:backgroundTint="#3F51B5"
+        android:elevation="10dp"
+        android:paddingHorizontal="25dp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
